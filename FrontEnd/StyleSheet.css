@@ -1,9 +1,10 @@
 ﻿
-.majorHeading{
+.majorHeading {
     font-family: Georgia;
     font-weight: bold;
     color: black;
     font-size: xx-large;
+    text-align: center;
 }
     
 .minorHeading{
