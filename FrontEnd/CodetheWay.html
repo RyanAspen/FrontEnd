@@ -1,62 +1,100 @@
 ﻿<!––Press F12 while in chrome to see tools -->
 <!DOCTYPE html>
 <html>
+
 <head>
     <meta charset="utf-8" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
     <link rel="stylesheet" href="StyleSheet.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
     <title>Code The Way</title>
 </head>
 <body onload="showHide()">
-    <img src="Images\CodeTheWay Logo.png" /> <!--Code-->
-    <h1 class="majorHeading">Code the Way</h1>
-    <h3 class="minorHeading">Mission</h3>
-    <p class="bodyText">
-        Code the Way facilitates the collaboration of schools, companies, and nonprofits to: (1) Offer students advanced computer science training and real-world job experiences working on projects that benefit nonprofits; (2) Increase certified computer science teachers; and (3) Contribute to the technology talent base.
-    </p>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-sm-2" align="center">
+                <img src="Images\CodeTheWay Logo.png" />
+            </div>
+            <div class="col-sm-10">
+                <p class="majorHeading">Code the Way</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-3" align="center"> 
+                <a href="Codetheway.html" class="navigationLink">Code The Way</a>
+            </div>
+            <div class="col-sm-3" align="center">
+                <a href="LifeNavigators.html" class="navigationLink">Life Navigators</a>
+            </div>
+            <div class="col-sm-3" align="center">
+                <a href="HeroesforHealthcare.html" class="navigationLink">Heroes For Healthcare</a>
+            </div>
+            <div class="col-sm-3" align="center">
+                <a href="Media.html" class="navigationLink">Media</a>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-6">
+                <div class="row">
+                    <div class="col-sm-3">
+                        <h3 class="minorHeading">Mission</h3>
+                    </div>
+                    <div class="col-sm-9">
+                        <p class="bodyText">
+                            Code the Way facilitates the collaboration of schools, companies, and nonprofits to: (1) Offer students advanced computer science training and real-world job experiences working on projects that benefit nonprofits; (2) Increase certified computer science teachers; and (3) Contribute to the technology talent base.
+                        </p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-12">
+                        <button onclick="showHide()" id="visionToggle">Show Vision</button>
+                    </div>
+                </div>
+                <div class="row">
+                    <div id="vision">
+                        <div class="col-sm-3">
+                            <h3 class="minorHeading">Vision</h3>
+                        </div>
+                        <div class="col-sm-9">
+                            <p class="bodyText">High school students in Greater Milwaukee have access to high quality computer science education and real-world job experiences, positioning them for success in technology-related fields</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-6">
+                <img src="Images\Team Learning.jpg" align="right" height=250 width=400 />
+            </div>
+        </div>
+    </div>
+    
+    
     <p class="bodyText">Code the Way model includes:</p>
     <ul class="bodyText">
-        <li>
-            <div class="tooltip">
-                Student access to real-world job experience
-                <div class="tooltiptext">
-                    In addition to an advanced course that may earn post-secondary credits, students get experience working collaboratively on a project that benefits a nonprofit, culminating in a presentation to business leaders.
-                </div>
-            </div>
+        <li data-toggle="tooltip" data-placement="bottom" title="In addition to an advanced course that may earn post-secondary credits, students get experience working collaboratively on a project that benefits a nonprofit, culminating in a presentation to business leaders.">
+        Student access to real-world job experience
         </li>
-        <li>
-            <div class="tooltip">
-                Companies are part of the solution
-                <div class="tooltiptext">
-                    Companies invest in education, make technology more accessible to nonprofits, offer their employees a meaningful volunteer experience, and contribute to the talent pipeline.
-                </div>
-            </div>
+        <li data-toggle="tooltip" data-placement="bottom" title="Companies invest in education, make technology more accessible to nonprofits, offer their employees a meaningful volunteer experience, and contribute to the talent pipeline.">
+        Companies are part of the solution
         </li>
-        <li>
-            <div class="tooltip">
-                Increasing certified computer science teachers
-                <div class="tooltiptext">
-                    Support and training for computer science teacher certification increases the availability and quality of high school computer science programs.
-                </div>
-            </div>
+        <li data-toggle="tooltip" data-placement="bottom" title="Support and training for computer science teacher certification increases the availability and quality of high school computer science programs.">
+            Increasing certified computer science teachers
         </li>
     </ul>
     <br />
-    <img src="Images\Team Learning.jpg" align="right" height=250 width=400 />
-    <button onclick="showHide()" id="visionToggle">Show Vision</button>
-    <div id="vision">
-        <h3 class="minorHeading">Vision</h3>
-        <p class="bodyText">High school students in Greater Milwaukee have access to high quality computer science education and real-world job experiences, positioning them for success in technology-related fields</p>
-    </div>
-    <h3 class="minorHeading">Links</h3>
-    <ul>
-        <li class="navigationLink"><a href="LifeNavigators.html">Life Navigators</a></li>
-        <li class="navigationLink"><a href="HeroesforHealthcare.html">Heroes For Healthcare</a></li>
-        <li class="navigationLink"><a href="Media.html">Media</a></li>
-    </ul>
+    
+    
+    
+    
 </body>
 </html>
 <script>
 
+    $(document).ready(function () {
+        $('[data-toggle="tooltip"]').tooltip();
+    });
 
     function showHide() //Toggle visibility of an ID
     {

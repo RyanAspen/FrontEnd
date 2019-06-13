@@ -20,7 +20,29 @@
     font-size: medium;
 }
 
-.navigationLink{
+.bodyText + .tooltip > .tooltip-inner {
+    background-color: #557A95;
+    border: 2px solid #557A95;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    margin: 4px 2px;
+    cursor: pointer;
+    transition-duration: 0.4s;
+    border: 1px solid #557A95;
+    padding: 15px;
+    font-size: small;
+}
+
+.bodyText + .tooltip.bottom > .tooltip-arrow {
+    border-bottom: 2px solid #557A95;
+    display: inline-block;
+    margin: 4px 2px;
+}
+
+.navigationLink {
     background-color: #557A95;
     border: 2px solid #557A95;
     color: white;
@@ -35,10 +57,10 @@
     transition-duration: 0.4s;
 }
 
-.navigationLink:hover{
-    background-color: white;
-    color: #557A95;
-}
+    .navigationLink:hover {
+        background-color: white;
+        color: #557A95;
+    }
 
 /*Should be changed*/
 #visionToggle {
