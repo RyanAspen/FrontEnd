@@ -40,3 +40,125 @@
     color: #557A95;
 }
 
+/*Should be changed*/
+#visionToggle {
+    background-color: #557A95;
+    border: 2px solid #557A95;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: medium;
+    font-family: Georgia;
+    margin: 4px 2px;
+    cursor: pointer;
+    transition-duration: 0.4s;
+}
+
+#visionToggle:hover{
+    background-color: white;
+    color: #557A95;
+}
+
+#presidentMessageToggle {
+    background-color: #557A95;
+    border: 2px solid #557A95;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: medium;
+    font-family: Georgia;
+    margin: 4px 2px;
+    cursor: pointer;
+    transition-duration: 0.4s;
+}
+
+#presidentMessageToggle:hover {
+    background-color: white;
+    color: #557A95;
+}
+
+#historyToggle {
+    background-color: #557A95;
+    border: 2px solid #557A95;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: medium;
+    font-family: Georgia;
+    margin: 4px 2px;
+    cursor: pointer;
+    transition-duration: 0.4s;
+}
+
+#historyToggle:hover {
+    background-color: white;
+    color: #557A95;
+}
+
+#nextButton {
+    background-color: #557A95;
+    border: 2px solid #557A95;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: medium;
+    font-family: Georgia;
+    margin: 4px 2px;
+    cursor: pointer;
+    transition-duration: 0.4s;
+}
+
+#nextButton:hover {
+    background-color: white;
+    color: #557A95;
+}
+
+#nextButton {
+    background-color: #557A95;
+    border: 2px solid #557A95;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: medium;
+    font-family: Georgia;
+    margin: 4px 2px;
+    cursor: pointer;
+    transition-duration: 0.4s;
+}
+
+    #nextButton:hover {
+        background-color: white;
+        color: #557A95;
+    }
+
+.tooltip {
+    position: relative;
+    display: inline-block;
+    border-bottom: 1px dotted black;
+}
+
+.tooltip:hover .tooltiptext {
+    visibility: visible;
+}
+
+.tooltip .tooltiptext {
+    visibility: hidden;
+    width: 500px;
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+    position: absolute;
+    z-index: 1;
+}
