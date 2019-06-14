@@ -20,7 +20,29 @@
     font-size: medium;
 }
 
-.navigationLink{
+.bodyText + .tooltip > .tooltip-inner {
+    background-color: #557A95;
+    border: 2px solid #557A95;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    margin: 4px 2px;
+    cursor: pointer;
+    transition-duration: 0.4s;
+    border: 1px solid #557A95;
+    padding: 15px;
+    font-size: small;
+}
+
+.bodyText + .tooltip.bottom > .tooltip-arrow {
+    border-bottom: 2px solid #557A95;
+    display: inline-block;
+    margin: 4px 2px;
+}
+
+.navigationLink {
     background-color: #557A95;
     border: 2px solid #557A95;
     color: white;
@@ -35,8 +57,142 @@
     transition-duration: 0.4s;
 }
 
-.navigationLink:hover{
+    .navigationLink:hover {
+        background-color: white;
+        color: #557A95;
+    }
+
+/*Should be changed*/
+#visionToggle {
+    background-color: #557A95;
+    border: 2px solid #557A95;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: medium;
+    font-family: Georgia;
+    margin: 4px 2px;
+    cursor: pointer;
+    transition-duration: 0.4s;
+}
+
+#visionToggle:hover{
     background-color: white;
     color: #557A95;
 }
 
+#presidentMessageToggle {
+    background-color: #557A95;
+    border: 2px solid #557A95;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: medium;
+    font-family: Georgia;
+    margin: 4px 2px;
+    cursor: pointer;
+    transition-duration: 0.4s;
+}
+
+#presidentMessageToggle:hover {
+    background-color: white;
+    color: #557A95;
+}
+
+#historyToggle {
+    background-color: #557A95;
+    border: 2px solid #557A95;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: medium;
+    font-family: Georgia;
+    margin: 4px 2px;
+    cursor: pointer;
+    transition-duration: 0.4s;
+}
+
+#historyToggle:hover {
+    background-color: white;
+    color: #557A95;
+}
+
+#nextButton {
+    background-color: #557A95;
+    border: 2px solid #557A95;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    text-decoration: none;
+    display: block;
+    font-size: medium;
+    font-family: Georgia;
+    margin: 4px 2px;
+    cursor: pointer;
+    transition-duration: 0.4s;
+}
+
+#nextButton:hover {
+    background-color: white;
+    color: #557A95;
+}
+
+#backButton {
+    background-color: #557A95;
+    border: 2px solid #557A95;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    text-decoration: none;
+    display: block;
+    font-size: medium;
+    font-family: Georgia;
+    margin: 4px 2px;
+    cursor: pointer;
+    transition-duration: 0.4s;
+}
+
+#backButton:hover {
+    background-color: white;
+    color: #557A95;
+}
+
+.media {
+    display: block;
+    margin-left:auto;
+    margin-right:auto;
+}
+
+.tooltip {
+    position: relative;
+    display: inline-block;
+    border-bottom: 1px dotted black;
+}
+
+.tooltip:hover .tooltiptext {
+    visibility: visible;
+}
+
+.tooltip .tooltiptext {
+    visibility: hidden;
+    width: 500px;
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+    position: absolute;
+    z-index: 1;
+}
